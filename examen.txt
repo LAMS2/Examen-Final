@@ -1,0 +1,133 @@
+Para entregar Lunes, Noviembre 11, 11:59AM
+
+Romualdo es el dueño de una pasteleria y tambien el cocinero principal. A el le gusta experimentar con sus recetas en busqueda del mejor sabor, pero a veces pierde el hilo de los cambios que ha hecho. Romualdo decidio intentar con un manejador de versiones para solucionarlo y ha elegido GIT.
+
+	- Guardar la version original de las recetas de los pasteles: Chocolate, Tres leches, Zanahoria, Pay de queso, Pay de limon
+	- Crear un repositorio en GitHUB para almacenar las recetas en la nube
+	- Subir la version original de las recetas
+
+Ahora que las recetas originales estan a salvo Romualdo puede seguir con sus experimentos.
+
+	- Modificar la receta del pay de queso (agregar "mas queso")
+	- Publicar el cambio
+	- Modificar la receta de nuevo ("no tanto")
+	- Publicar el cambio
+
+Para la temporade de Dia de gracias la pasteleria de Romualdo esta lanzando una promocion de temporada que incluye "Pay de manzana" y "Salsa de arandanos"
+
+	- Crear receta para el Pay de manzana
+	- Crear receta para la Salsa de arandanos
+	- Publicar cambio
+	- Editar receta de pay de manzana "mas tiempo en el horno para corteza crujiente"
+	- Publicar cambio
+
+Debido al exito de la promocion las ventas en el Pay de limon han bajado un poco, asi que por la duracion de la temporada Romualdo decidio no mantener el Pay de limon en la lista publica, pero no quiere borrar la receta ya que siempre a sido un clasico y uno de sus mejores productos. 
+
+	- Sin eliminar la receta original, dejar de darle seguimiento a la receta del Pay de limon
+luism@LAPTOP-DARGU2F7 MINGW64 ~/Desktop/Examen Final (master)
+$ git rm --cached 'Pay de Limon.txt'
+  rm 'Pay de Limon.txt'
+
+luism@LAPTOP-DARGU2F7 MINGW64 ~/Desktop/Examen Final (master)
+$   git commit -m "Deja de seguir pay de limon"
+[master da9bcd9] Deja de seguir pay de limon
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Pay de Limon.txt
+
+luism@LAPTOP-DARGU2F7 MINGW64 ~/Desktop/Examen Final (master)
+$ git push origin
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 1.41 KiB | 84.00 KiB/s, done.
+Total 15 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/LAMS2/Examen-Final.git
+   572c759..da9bcd9  master -> master
+
+
+
+
+
+
+
+Copiar las siguientes preguntas a un archivo llamado "examen" y contestarlas con sus palabras.
+
+	Nombre: Luis Angel Martinez Salazar
+	Grupo:Matutino 1
+	Fecha: 8/11/19
+	
+	GIT
+	
+	1.Cual es la diferencia entre git y GitHUB?
+
+	R: 
+	Git se dice es un controlador de versiones, con lo que cuenta se puede revisar o simplemente ver lo que se 
+	ha hecho del proyecto como un historial de lo que se esta trabajando, 
+	GitHub es una plataforma de almacenamiento de proyectos, donde personas pueden tomas los proyectos de los demas o
+	puedes compartir para todo el mundo, incluso te ayudan a problemas que tengas con algun codigo. 
+
+	2.En cuantos y cuales estados puede estar un archivo? 
+
+	R: 
+	Modified: Cuando modificas el archivo.
+	Staged: Cuando agregas a los cambios que vas a hacer en el commit en Git.
+	Committed: Cuando le dices a Git que realice los cambios y te guarda la nueva versión, y se agregar un mensaje 
+	para ver los cambios del documento. 
+
+	3.Para que sirve el comando "git add ." ? 
+
+	R: 
+	Para agregar los cambios que se encuentran en moddified y pasarlos a staged.
+
+	4.Cuales son los 4 datos mas relevantes a la hora de hacer un commit?
+	
+	R:
+	El Mensaje y Quien lo hizo.
+
+	5.Cual es el comando para crear una rama en mi repositorio?
+
+	R: 
+	git checkout -b "Nombre_de_la_rama"
+
+	JIRA
+	
+	1.Defina lo que es un issue:
+
+	R:
+	Un issue se encarga de realizar una tarea, un decir que se encarga del trabajo que tenemos que hacer por ejemplo: "Crear una receta".
+
+	2.En kanban y scrum, cuales son las columnas default de un tablero?
+
+	R: 
+	ToDo , Inprogress and Done
+
+	Como se selecciona un Dashboard para mostrarse en la pantalla de bienvenida?
+	
+	R:
+	Ya que se tenga creado solo se va al Dashboard y despues sale un menu desplegable al seleccionarlo y vendra todo lo que se ha creado. 
+	
+
+	Jenkins
+	
+	Cual es el atajo (ruta relativa) para el directorio home de un usuario de ubuntu?
+	
+	R: 
+	cd ~
+
+	Como se installa Jenkins en un sistema linux?
+	
+	R: 
+	Atraves de un comando que se busca en internet
+
+	Cual es la relacion entre Hudson y Jenkins? 
+	
+
+
+Incluir el archivo de "examen" en el repositorio de la pasteleria de Romualdo.
+
+Enviar un correo con la URL del repositorio a tchavez00@hotmail.com
+
+
+
